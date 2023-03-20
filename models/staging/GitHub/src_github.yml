@@ -3,6 +3,7 @@ version: 2
 sources:
   - name: github
     schema: github
+    loader: airbyte
     tables:
       - name: branches
       - name: organisations

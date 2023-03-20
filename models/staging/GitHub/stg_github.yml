@@ -10,3 +10,7 @@ models:
         tests:
           - unique
           - not_null
+      - name: branch_name
+        description: "The name of the branch"
+        tests:
+          - not_null
