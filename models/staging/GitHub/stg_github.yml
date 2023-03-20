@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+  - name: stg_github_branches
+    description: "This table contains the branches for each repository"
+    columns:
+      - name: branch_id
+        description: "The primary key for this table, created using surrogate key functionality"
+        tests:
+          - unique
+          - not_null

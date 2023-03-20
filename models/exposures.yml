@@ -1,0 +1,19 @@
+version: 2
+
+exposures:
+
+  - name: GitHub BI
+    label: GitHub data
+    type: dashboard
+    maturity: low
+    url: hhttps://sso.online.tableau.com/public/idp/SSO
+    description: >
+      This dashboard displays the GitHub data for the organisation.
+
+    depends_on:
+      - ref('stg_github_branches')
+
+    owner:
+      name: Phil Killarney
+      email: phil.killarney@glean.co
+
