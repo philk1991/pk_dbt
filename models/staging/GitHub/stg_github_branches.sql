@@ -1,7 +1,8 @@
 with branches as (
     select
-        protected,
+        {{ dbt_utils.generate_surrogate_key(['name','repository']) }} as branch_id,
         "name" as branch_name,
+        protected,
         "commit",
         protection,
         repository,
